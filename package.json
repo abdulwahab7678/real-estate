@@ -95,7 +95,7 @@
     "yaml": "^1.10.2"
   },
   "scripts": {
-    "dev": "parcel src/home-page.html"
+    "dev": "parcel src/register-page.html"
   },
   "author": "",
   "license": "ISC",

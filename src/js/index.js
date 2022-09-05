@@ -1,9 +1,22 @@
 import"@fortawesome/fontawesome-free/css/all.css"
-import"swiper/swiper-bundle.css"
-import"swiper/swiper-bundle.min.css"
-import"swiper/swiper-bundle.min.js"
+// import"swiper/swiper-bundle.css"
+// import"swiper/swiper-bundle.min.css"
+// import"swiper/swiper-bundle.min.js"
 
-
+var swiper = new Swiper(".slider-1 .mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  loop: true,
+  autoHeight: true,
+  // autoplay: {
+  //   delay: 1000,
+  //   disableOnInteraction: false,
+  // },
+  pagination: {
+    el: ".slider-1 .swiper-pagination",
+    clickable: true,
+  },
+});
 
 var swiper = new Swiper(".slider-home .mySwiper", {
     slidesPerView: 3,

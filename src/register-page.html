@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+
+        <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <!-- css -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/grid-system.css">
@@ -28,88 +31,90 @@
             <a class="dark" href="#"><span class="span-4">register</span></a>
         </div>
     </header>
-    <section class="sec-1 py-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 d-s-none">
-                    <div class="rel">
-                        <div class="login-img">
-                            <img src="./images/mobile.png" alt="">
-                        </div>
-                        <div class="call-bar flex j-s item-c">
-                            <span class="white">03.45</span>
-                            <div class="flex item-c">
-                                <div class="range-input mr-15">
-                                    <img src="./images/volume.png" alt="">
-                                    <input type="range" name="volume" id="volume">
+    <section class="sec-1">
+        <div class="left-side d-s-none">
+            <div class="slider-1">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="">
+                                <div class="login-img">
+                                    <img src="./images/login-image.png" alt="">
                                 </div>
-                                <button class="call-bar-child mr-15">
-                                    <img src="./images/setting.png" alt="">
-                                </button>
-                                <button class="call-bar-child mr-15">
-                                    <img src="./images/video.png" alt="">
-                                </button>
-                                <button class="call-bar-child mr-15">
-                                    <img src="./images/microphone-slash-2.png" alt="">
-                                </button>
-                                <button class="call-bar-last-child">
-                                    <img src="./images/call.png" alt="">
-                                </button>
+                                <div class="">
+                                    <h1 class="hd-1">Find your sweet home</h1>
+                                    <p class="para-1">Schedule visit in just a few clicks <br> visits in just a few
+                                        clicks</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="chat">
-                            <p class="span-3">I need a photo of your house building front view, because it's not in the
-                                description</p>
+                        <div class="swiper-slide">
+                            <div class="">
+                                <div class="login-img">
+                                    <img src="./images/slide-2.png" alt="">
+                                </div>
+                                <div class="">
+                                    <h1 class="hd-1">Free Consultation</h1>
+                                    <p class="para-1">Let your connect with the agent in our in-build-chat system to
+                                        connect agent</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="">
-                        <h1 class="hd-1">Free Consultation</h1>
-                        <p class="para-1">Let your connect with the agent in our <br> in-build-chat system to connect
-                            agent</p>
-                        <div class="">........</div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-12">
-                    <div class="flex j-c item-c h-100">
-                        <div class="w-100 px-50">
-                            <h1 class="hd-2 pb-12">Create your Free Account</h1>
-                            <span class="span-3 light">Sumbit your data for register</span>
-                            <form class="login-form py-50">
-                                <div class="pb-25">
-                                    <label class="span-2" for="fullname">Full Name</label>
-                                    <input class="input-io" type="text" name="text" id="text    ">
-                                </div>
-                                <div class="pb-25">
-                                    <label class="span-2" for="Orign">Your Origin</label>
-                                    <select class="input-io" name="Orgin" id="Orgin">
-                                        <option value="">ONE</option>
-                                        <option value="">ONE</option>
-                                        <option value="">ONE</option>
-                                </div>
-                                <div class="pb-25">
-                                    <label class="span-2" for="email">Your Email</label>
-                                    <input class="input-io" type="email" name="email" id="email">
-                                </div>
-                                <div class="pb-12">
-                                    <label class="span-2" for="password">Your password</label>
-                                    <input class="input-io" type="password" name="password" id="password">
-                                </div>
-                                <div class="pb-25">
-                                    <div class="">
-                                        <input type="checkbox" name="RememberMe" id="checkbox">
-                                        <label class="span-2 light" for="RememberMe">I agree to Sewo <a
-                                                href="#">Security </a> and <a href="#"> Privacy Policy</a></label>
+                        <div class="swiper-slide">
+                            <div class="">
+                                <a href="#">
+                                    <div class="login-img">
+                                        <img src="./images/slide-3.png" alt="">
                                     </div>
-
+                                </a>
+                                <div class="">
+                                    <h1 class="hd-1">View Detail with AR</h1>
+                                    <p class="para-1">You can view interior details with our built-in AR system</p>
                                 </div>
-                                <button type="button" class="primary-btn">Get Started</button>
-                            </form>
-
-
-                            <p class="span-2 text-c">I have an acount?<a href="#"> Login</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="">
+                <h1 class="hd-2 pb-12">Create your Free Account</h1>
+                <span class="span-3 light">Sumbit your data for register</span>
+                <form class="login-form py-50">
+                    <div class="pb-25">
+                        <label class="span-2" for="fullname">Full Name</label>
+                        <input class="input-io" type="text" name="text" id="text    ">
+                    </div>
+                    <div class="pb-25">
+                        <label class="span-2" for="Orign">Your Origin</label>
+                        <select class="input-io" name="Orgin" id="Orgin">
+                            <option value="">ONE</option>
+                            <option value="">ONE</option>
+                            <option value="">ONE</option>
+                    </div>
+                    <div class="pb-25">
+                        <label class="span-2" for="email">Your Email</label>
+                        <input class="input-io" type="email" name="email" id="email">
+                    </div>
+                    <div class="pb-12">
+                        <label class="span-2" for="password">Your password</label>
+                        <input class="input-io" type="password" name="password" id="password">
+                    </div>
+                    <div class="pb-25">
+                        <div class="">
+                            <input type="checkbox" name="RememberMe" id="checkbox">
+                            <label class="span-2 light" for="RememberMe">I agree to Sewo <a
+                                    href="#">Security </a> and <a href="#"> Privacy Policy</a></label>
+                        </div>
+
+                    </div>
+                    <button type="button" class="primary-btn">Get Started</button>
+                </form>
+
+
+                <p class="span-2 text-c">I have an acount?<a href="#"> Login</a></p>
             </div>
         </div>
     </section>
@@ -119,7 +124,8 @@
 
 
 
-
+ <!-- swiper -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </body>
 <script type="module" src="./js/index.js"></script>
 

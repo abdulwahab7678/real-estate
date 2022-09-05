@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
     <!-- css -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/grid-system.css">
@@ -28,97 +32,93 @@
             <a class="dark" href="#"><span class="span-4">login</span></a>
         </div>
     </header>
-    <section class="sec-1 py-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 d-s-none">
-                    <div class="rel">
-                        <div class="login-img">
-                            <img src="./images/home-1.jpg" alt="">
+    <section class="sec-1">
+        <div class="left-side d-s-none">
+            <div class="slider-1">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="">
+                                <div class="login-img">
+                                    <img src="./images/login-image.png" alt="">
+                                </div>
+                                <div class="">
+                                    <h1 class="hd-1">Find your sweet home</h1>
+                                    <p class="para-1">Schedule visit in just a few clicks <br> visits in just a few
+                                        clicks</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="srch-box">
-                            <div class="flex mb-12">
-                                <div class="icon-box"><i class="fa-solid fa-building sel-icon"></i></div>
-                                <div class="w-100 mr-10">
-                                    <select class="sel-box ml-10" name="select" id="select">
-                                        <option value="BuyaBuilding">Buy a Building</option>
-                                        <option value="BuyaBuilding">Buy a Building</option>
-                                        <option value="BuyaBuilding">Buy a Building</option>
-                                    </select>
+                        <div class="swiper-slide">
+                            <div class="">
+                                <div class="login-img">
+                                    <img src="./images/slide-2.png" alt="">
+                                </div>
+                                <div class="">
+                                    <h1 class="hd-1">Free Consultation</h1>
+                                    <p class="para-1">Let your connect with the agent in our in-build-chat system to
+                                        connect agent</p>
                                 </div>
                             </div>
-                            <div class="flex mb-12">
-                                <div class="icon-box"><i class="fa-solid fa-building sel-icon"></i></div>
-                                <div class="w-100 mr-10">
-                                    <select class="sel-box ml-10" name="select" id="select">
-                                        <option value="BuyaBuilding">Buy a Building</option>
-                                        <option value="BuyaBuilding">Buy a Building</option>
-                                        <option value="BuyaBuilding">Buy a Building</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="flex mb-16">
-                                <div class="icon-box"><i class="fa-solid fa-building sel-icon"></i></div>
-                                <div class="w-100 mr-10">
-                                    <select class="sel-box ml-10" name="select" id="select">
-                                        <option value="BuyaBuilding">Buy a Building</option>
-                                        <option value="BuyaBuilding">Buy a Building</option>
-                                        <option value="BuyaBuilding">Buy a Building</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <button type="button">serach</button>
                         </div>
-                    </div>
-                    <div class="">
-                        <h1 class="hd-1">Find your sweet home</h1>
-                        <p class="para-1">Schedule visit in just a few clicks <br> visits in just a few clicks</p>
-                        <div class="">........</div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-12">
-                    <div class="flex j-c item-c h-100">
-                        <div class="w-100 px-50">
-                            <h1 class="hd-2 pb-12">Welcome Back to Sewo!</h1>
-                            <span class="span-3 light">Sign in your account</span>
-                            <form class="login-form py-50">
-                                <div class="pb-25">
-                                    <label class="span-2" for="email">Your Email</label>
-                                    <input class="input-io" type="email" name="email" id="email">
-                                </div>
-                                <div class="pb-12">
-                                    <label class="span-2" for="password">Your password</label>
-                                    <input class="input-io" type="password" name="password" id="password">
-                                </div>
-                                <div class="flex item-c j-s pb-25">
-                                    <div class="">
-                                        <input  type="checkbox" name="RememberMe" id="checkbox">
-                                        <label class="span-2 light" for="RememberMe">Remember Me</label>
+                        <div class="swiper-slide">
+                            <div class="">
+                                <a href="#">
+                                    <div class="login-img">
+                                        <img src="./images/slide-3.png" alt="">
                                     </div>
-                                    <a  href="#" class="span-2 light">Forgot Password?</a>
+                                </a>
+                                <div class="">
+                                    <h1 class="hd-1">View Detail with AR</h1>
+                                    <p class="para-1">You can view interior details with our built-in AR system</p>
                                 </div>
-                                <button type="button" class="primary-btn">login</button>
-                            </form>
-                            <span class="span-2 light instan pb-40">Instan Login</span>
-                            <div class="flex j-s pb-40">
-                                <button class="secondry-btn flex item-c btn-3" type="button"><img class="mr-10" src="./images/google.png" alt="">Continue with Google</button>
-                                <button class="secondry-btn flex item-c btn-3 ml-10" type="button"><img class="mr-10" src="./images/google.png" alt="">Continue with Google</button>
                             </div>
-                            <p class="span-2 text-c">Don’t have any acount?<a href="#">Register</a></p>
                         </div>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="">
+                <h1 class="hd-2 pb-12">Welcome Back to Sewo!</h1>
+                <span class="span-3 light">Sign in your account</span>
+                <form class="login-form py-50">
+                    <div class="pb-25">
+                        <label class="span-2" for="email">Your Email</label>
+                        <input class="input-io" type="email" name="email" id="email">
+                    </div>
+                    <div class="pb-12">
+                        <label class="span-2" for="password">Your password</label>
+                        <div class="password">
+                            <input class="input-io" type="password" name="password" id="password">
+                            <img src="./images/eye.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="flex item-c j-s pb-25">
+                        <div class="">
+                            <input type="checkbox" name="RememberMe" id="checkbox">
+                            <label class="span-2 light" for="RememberMe">Remember Me</label>
+                        </div>
+                        <a href="#" class="span-2 light">Forgot Password?</a>
+                    </div>
+                    <button type="button" class="primary-btn">login</button>
+                </form>
+                <span class="span-2 light instan pb-40">Instan Login</span>
+                <div class="btn-p">
+                    <a href="#" class="secondry-btn"><img class="mr-10" src="./images/google.png" alt="">Continue with
+                        Google</a>
+                    <a href="#" class="secondry-btn"><img class="mr-10" src="./images/facebook.svg" alt="">Continue with
+                        Facebook</a>
+                </div>
+                <p class="span-2 text-c">Don’t have any acount?<a href="#">Register</a></p>
             </div>
         </div>
     </section>
 
 
-
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/index.js"></script>
 </body>
-<script type="module" src="./js/index.js"></script>
 
 </html>
