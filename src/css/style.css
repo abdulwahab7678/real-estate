@@ -263,7 +263,25 @@ a:hover {
 .sec-1 .right-side .secondry-btn:first-child {
     margin-right: 16px;
 }
+.sec-1.res-page .right-side{
+padding: 167px 0 100px;
+}
 
+.sec-1.res-page .right-side .sel-box-res{
+    padding-bottom: 24px;
+}
+.sec-1.res-page .right-side .sel-box-res select{
+    font-size: 1.6rem;
+}
+.sec-1.res-page .right-side .password-p{
+    padding-bottom: 16px;
+}
+.sec-1.res-page .right-side .checkbox-p{
+    padding-bottom: 40px;
+}
+.sec-1.res-page .right-side .checkbox-p a{
+    color: var(--primary);
+}
 .login-form .password {
     display: flex;
     position: relative;
@@ -309,7 +327,6 @@ a:hover {
     align-items: center;
     border: 1px solid var(--sky);
     border-radius: 8px;
-    padding: 18px;
 }
 
 .sel-box {
@@ -593,6 +610,7 @@ a:hover {
     width: 100%;
     background-color: white;
     border-radius: 8px;
+    color: var(--light-blue);
 }
 
 .sec-1-h .sec-1-child .aside-home nav ul:nth-child(2) {
@@ -670,7 +688,6 @@ a:hover {
 
 .container-fluid {
     width: 100%;
-    padding: 0 15px;
 }
 
 #header2 .header-i .profile-i {
@@ -729,7 +746,8 @@ a:hover {
     margin-right: 39.92px;
 }
 
-.sec-1-h .box-p .sel-box-p .box select {
+.sec-1-h .box-p .sel-box-p .box select, 
+.sec-1-h .sel-box-p .box .find-estate {
     margin-left: 12px;
     border: 1px solid var(--sky);
     color: var(--light-blue);
@@ -737,9 +755,34 @@ a:hover {
     padding: 10px 15px;
     font-size: 1.4rem;
     font-weight: 600;
+    width: 160px;
+}
+.sec-1-h .sel-box-p .box .find-estate .input-zz{
+    border: none;
+    width: 100%;
+}
+.sec-1-h .sel-box-p .box .find-estate .input-zz:focus{
+outline: none;
 }
 
-.sec-1-h .box-p .sel-box-p button {
+.sec-1-h .box-p .sel-box-p .box .input-zz::placeholder{
+    color: var(--light-blue);
+    
+}
+
+.sec-1-h .sel-box-p .box .find-estate{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.sec-1-h .sel-box-p .box .find-estate .btn-arrow{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+}
+.sec-1-h .box-p .sel-box-p .primary-btn {
     background-color: var(--primary);
     border: 1px solid var(--primary);
     color: #fff;
@@ -897,7 +940,9 @@ a:hover {
     right: 0;
     cursor: pointer;
 }
-
+.slider-home a.home-card-btn{
+    color: var(--dark-blue);
+}
 .sec-1-h .main .box-p-2 {
     padding: 24px;
     background-color: #ffffff;
@@ -924,19 +969,19 @@ a:hover {
     padding: 8px 16px;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #848FAC;
     margin-right: 15px;
     border-radius: 6px;
     text-transform: capitalize;
 }
-
+.sec-1-h .main .box-p-2 .sel-box-p ul li a{
+    color: #848FAC;
+}
 .sec-1-h .main .box-p-2 .sel-box-p ul li.active {
     background-color: #1922521F;
     color: #192252;
 }
-
+/* 
 .sec-1-h .main .box-p-2 .sel-box-p .box select {
-    width: 142px;
     margin-right: 40px;
     border: 1px solid var(--sky);
     color: var(--light-blue);
@@ -944,9 +989,24 @@ a:hover {
     padding: 10px 15px;
     font-size: 1.4rem;
     font-weight: 600;
+} */
+.sec-1-h .main .box-p-2 .box .find-estate {
+    width: 142px;
+    margin-right: 40px;
 }
 
-
+.sec-1-h .main .box-p-2 .row{
+    margin: 0;
+}
+.sec-1-h .main .box-p-2 .col-lg-6 {
+    padding: 0;
+}
+.sec-1-h .main .box-p-2 .col-lg-6:first-child{
+    padding-right: 5px;
+}
+.sec-1-h .main .box-p-2 .col-lg-6:last-child{
+    padding-left: 5px;
+}
 .sec-1-h .main .box-p-2 .home-card {
     display: flex;
     padding-bottom: 24px;
@@ -1019,10 +1079,6 @@ a:hover {
 
 .pr-20 {
     padding-right: 20px;
-}
-
-.sec-1-h .main .detail-building {
-    display: none;
 }
 
 .sec-1-h .main .box-p-3 {
@@ -1455,6 +1511,10 @@ a:hover {
         width: 100%;
 
     }
+    .sec-1-h .box-p .sel-box-p .box select, .sec-1-h .sel-box-p .box .find-estate {
+    width: 100%;
+    }
+
 }
 
 @media (max-width:1023px) {
@@ -1471,6 +1531,9 @@ a:hover {
     .sec-1-h .main .box-p-2 .col-lg-6 {
         padding: 0 15px;
     }
+    .sec-1-h .box-p .sel-box-p .box select, .sec-1-h .sel-box-p .box .find-estate {
+        width: 100%;
+        }
 }
 
 @media (max-width:1023px) {

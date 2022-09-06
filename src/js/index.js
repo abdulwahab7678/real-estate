@@ -84,26 +84,20 @@ var swiper = new Swiper(".slider-2 .mySwiper", {
 
 
 
-  var home = document.querySelector(".main .home")
-  var ditailBuilding = document.querySelector(".main .detail-building")
-  var homeCardBtn = document.querySelectorAll(".main .home-card-btn").length;
-  var btnArrow = document.querySelector(".main .btn-arrow")
+//   var home = document.querySelector(".main .home")
+//   var ditailBuilding = document.querySelector(".main .detail-building")
+//   var homeCardBtn = document.querySelectorAll(".main .home-card-btn").length;
+//   var btnArrow = document.querySelector(".main .btn-arrow")
 
-for (var i = 0; i < homeCardBtn; i++){
-document.querySelectorAll(".home-card-btn")
-[i].addEventListener("click", function(){
-  ditailBuilding.style.cssText="display:block"
-  home.style.cssText="display:none"
-})
-}
-function funcHome(){
-  ditailBuilding.style.cssText="display:none"
-  home.style.cssText="display:block"
-}
-btnArrow.addEventListener("click", funcHome)
-
-  // function funcDitailBuil(){
-   
-  // }
-  // homeCardBtn.addEventListener("click", funcDitailBuil) 
-   
+// for (var i = 0; i < homeCardBtn; i++){
+// document.querySelectorAll(".home-card-btn")
+// [i].addEventListener("click", function(){
+//   ditailBuilding.style.cssText="display:block"
+//   home.style.cssText="display:none"
+// })
+// }
+// function funcHome(){
+//   ditailBuilding.style.cssText="display:none"
+//   home.style.cssText="display:block"
+// }
+// btnArrow.addEventListener("click", funcHome)
